@@ -1,0 +1,80 @@
+@import "../../scss/variables/colors";
+.header{
+    width: 60vw;
+    height: 6rem;
+    background: #F8F8FF;
+    position: fixed;
+    left: 50%;
+    top: 2%;
+    padding: 0 3rem;
+    border-radius: .5rem;
+    transform: translateX(-50%);
+    z-index: 999;
+    
+    box-shadow: $box-shadow;
+    
+    display: flex;
+    align-items: center;
+    transition: 300ms linear;
+}
+
+.headerHide{
+    top: -6rem;
+}
+
+.row1{
+    .logo{
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: rgb(41, 41, 41);
+    }
+    
+    .logoPeriod{
+        color: $color-1;
+    }
+}
+.row2{
+    flex: 1;
+    
+    .ul{
+        display: flex;
+        float: right;
+    }
+    .li{
+        margin: 0 2rem;
+        list-style-type: none;
+    }
+}
+.row3{
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    .headerBtn{
+        width: 12rem;
+        height: 2.5rem;
+        margin-right: 1.5rem;
+        border: none;
+        background: $color-1;
+        color: #fff;
+        font-size: 1rem;
+        
+        box-shadow: $box-shadow;
+    }
+    
+    .shoppingCartBtn{
+        background: none;
+        border: none;
+    }
+    
+    .shoppingCart{
+        width: 2rem;
+        filter: drop-shadow(1px 1px  3px rgba(0, 0, 0, 0.143));
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+    .header{
+        display: none;
+    }
+}

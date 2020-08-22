@@ -1,0 +1,37 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes sideScroll {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -250%;
+  }
+}
+
+$sideScroll: sideScroll 15s linear infinite;
+
+$slowFade: fadeIn 800ms linear 0ms forwards;
+
+$fade1: fadeIn 300ms linear 0ms forwards;
+
+$fade2: fadeIn 300ms linear 200ms forwards;
+
+$fade3: fadeIn 300ms linear 400ms forwards;
+
+$fade4: fadeIn 300ms linear 600ms forwards;
